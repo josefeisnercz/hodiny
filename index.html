@@ -103,7 +103,7 @@
     function highlightCells() {
         const now = new Date();
         const hour = now.getHours() % 12 || 12; // Convert 24-hour to 12-hour format
-        const minute = Math.floor(now.getMinutes() / 10) * 10; // Round down to the nearest 10
+        const minute = Math.floor(now.getMinutes() / 5) * 5; // Round down to the nearest 10
 
         // Clear previous highlights
         document.querySelectorAll('#namesTable td').forEach(td => {
